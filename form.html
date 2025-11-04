@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Form in HTML</h1>
+   <form action="/submit.php">
+    <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="enter your name"required>
+
+    </div>
+    <div>
+        <label for="phone">Phone</label>
+        <input id="phone" type="tel" placeholder="enter your phone no"required>
+
+    </div>
+    <div>
+        <label for="dob">Date of birth</label>
+        <input id="dob" type="date" placeholder="enter your dob"required>
+
+
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="enter your password"required>
+
+    </div>
+    <div>
+        <label for="gender">Gender</label>
+        <select id="gender"required>
+            <option value=""disabled selected>Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">FeMale</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <div>
+    <p> select Subscription plan</p>
+    <input id="basic" type="radio" name="Subscription" value="basic">
+    <label for="basic">Basic</label>
+    <input id="moderate" type="radio" name="Subscription" value="moderate">
+    <label for="moderate">Moderate</label>
+    <input id="premium" type="radio" name="Subscription" value="premium">
+    <label for="premium">Premium</label>
+
+    </div>
+    <input id="terms" type="checkbox" required>
+    <label for="terms">I have agreed to the terms and conditions</label>
+        <label for="comments">Comment</label>
+        <textarea id="comments" placeholder="enter comment" rows="4"></textarea>
+        <button type="submit">Submit</button>
+   </form> 
+
+</body>
+</html>

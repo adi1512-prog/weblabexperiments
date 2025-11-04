@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filters Row</title>
+    <style>
+        body {
+            background-color: #000;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #img {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        img {
+            border: 5px solid white;
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Filters */
+        .blur { filter: blur(4px); }
+        .brightness { filter: brightness(250%); }
+        .contrast { filter: contrast(180%); }
+        .grayscale { filter: grayscale(100%); }
+        .huerotate { filter: hue-rotate(120deg); }
+        .invert { filter: invert(100%); }
+        .opacity { filter: opacity(50%); }
+        .saturate { filter: saturate(250%); }
+        .sepia { filter: sepia(100%); }
+        .shadow { filter: drop-shadow(10px 10px 10px white); }
+    </style>
+</head>
+<body>
+    <div id="img">
+        <img src="https://www.thedigitalfix.com/wp-content/sites/thedigitalfix/2023/08/game-of-thrones-the-night-king-explained-1.jpg" class="blur" alt="Blur">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/90/Game_of_Thrones_Season_8.png" class="brightness" alt="Brightness">
+        <img src="https://cdn.mos.cms.futurecdn.net/yt7VY3r8bK8tYhLmgKo7Lk.jpg" class="contrast" alt="Contrast">
+        <img src="https://wallpapers.com/images/featured/game-of-thrones-4k-xht9p7t8mvkz2zlj.jpg" class="grayscale" alt="Grayscale">
+        <img src="https://wallpapercave.com/wp/wp1822717.jpg" class="huerotate" alt="Hue Rotate">
+        <img src="https://images7.alphacoders.com/831/831920.jpg" class="invert" alt="Invert">
+        <img src="https://images.alphacoders.com/812/812062.jpg" class="opacity" alt="Opacity">
+        <img src="https://images8.alphacoders.com/116/1169422.jpg" class="saturate" alt="Saturate">
+        <img src="https://images2.alphacoders.com/851/851756.jpg" class="sepia" alt="Sepia">
+        <img src="https://wallpapers.com/images/high/white-walker-ice-king-game-of-thrones-3i2nflp7x27vwxk4.webp" class="shadow" alt="Shadow">
+    </div>
+</body>
+</html>

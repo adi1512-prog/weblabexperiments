@@ -1,0 +1,10 @@
+body
+{
+    text-shadow: 0cap 0px 10px green;
+    background-color: bisque;
+    background-image:repeating-conic-gradient(red 10%,yellow 20%);
+    height:200px;
+    border-radius: 50%;
+
+}
+   
